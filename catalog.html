@@ -10,9 +10,14 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">Device</a>
-        <!-- Тут будет форма поиска -->
+        <form class="search-form" action="index.html" method="post">
+          <p>
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input id="search" type="search" name="search" value="Поиск по сайту">
+          </p>
+        </form>
         <ul class="header-user-list">
-          <li class="header-user-item"><a class="">Войти</a></li>
+          <li class="header-user-item"><a class="#">Войти</a></li>
           <li class="header-user-item"><a href="#">Сравнить</a></li>
           <li class="header-user-item"><a href="#">Корзина</a></li>
         </ul>
@@ -46,14 +51,58 @@
           <a href="catalog.html">Каталог товаров</a>
         </li>
         <li class="breadcrumbs-item">
-          <a href="">Моноподы для селфи</a>
+          <a>Моноподы для селфи</a>
         </li>
       </ul>
 
       <section class="catalog-filte">
         <h2 class="section-title">Фильтр:</h2>
-            <!-- Здесь будут формы -->
-        <a class="button" href="#">Показать</a>
+            <form class="catalog-filte-form" action="index.html" method="post">
+              <fieldset class="catalog-filte-range">
+                <legend>Стоимость</legend>
+                <p>
+                  <label class="visually-hidden" for="range">Фильтровать по цене</label>
+                  <input id="range" type="range" name="range" min="0" max="5000" step="1">
+                </p>
+                <span class="catalog-filte-range-value">от 0</span>
+                <span class="catalog-filte-range-value">до 5000</span>
+              </fieldset>
+              <fieldset class="catalog-filte-checkbox">
+                <legend>Цвет</legend>
+                <p>
+                  <input id="color-black" type="checkbox" name="color-black" value="" checked>
+                  <label for="color-black">Черный</label>
+                </p>
+                <p>
+                  <input id="color-white" type="checkbox" name="color-white" value="">
+                  <label for="color-white">Белый</label>
+                </p>
+                <p>
+                  <input id="color-blue" type="checkbox" name="color-blue" value="" checked>
+                  <label for="color-blue">Синий</label>
+                </p>
+                <p>
+                  <input id="color-red" type="checkbox" name="color-red" value="" checked>
+                  <label for="color-red">Красный</label>
+                </p>
+                <p>
+                  <input id="color-pink" type="checkbox" name="color-pink" value="">
+                  <label for="color-pink">Розовый</label>
+                </p>
+              </fieldset>
+              <fieldset class="catalog-filte-radio">
+                <legend>Bluetooth</legend>
+                <p>
+                  <input id="radio-button-1" type="radio" name="radio-button" value="" checked>
+                  <label for="radio-button-1">Есть</label>
+                </p>
+                <p>
+                  <input id="radio-button-2" type="radio" name="radio-button" value="">
+                  <label for="radio-button-2">Нет</label>
+                </p>
+              </fieldset>
+              <button class="button" type="submit">Показать</button>
+            </form>
       </section>
 
       <section class="sorting">
@@ -128,7 +177,7 @@
       <!-- Пагинация -->
         <ul class="pagination-list">
           <li class="pagination-item">
-            <button href="#">Назад</button>
+            <a class="pagination-button" href="#">Назад</a>
           </li>
           <li class="pagination-item pagination-item-current">
             <a href="#">1</a>
@@ -140,7 +189,7 @@
             <a href="#">3</a>
           </li>
           <li class="pagination-item">
-            <button href="#">Вперед</button>
+            <a class="pagination-button" href="#">Вперед</a>
           </li>
         </ul>
       </section>

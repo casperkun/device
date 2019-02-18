@@ -2,7 +2,7 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Магазин электроники Device</title>
+    <title>Главная - Магазин электроники Device</title>
   </head>
   <body>
 
@@ -10,9 +10,14 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="">Device</a>
-        <!-- Тут будет форма поиска -->
+        <form class="search-form" action="index.html" method="post">
+          <p>
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input id="search" type="search" name="search" value="Поиск по сайту">
+          </p>
+        </form>
         <ul class="header-user-list">
-          <li class="header-user-item"><a class="">Войти</a></li>
+          <li class="header-user-item"><a class="#">Войти</a></li>
           <li class="header-user-item"><a href="#">Сравнить</a></li>
           <li class="header-user-item"><a href="#">Корзина</a></li>
         </ul>
@@ -41,6 +46,17 @@
       <!-- Популярные товары (слайдер) -->
       <section class="slider-container">
       <h2 class="visually-hidden">Популярные товары</h2>
+      <ul class="slider-controls-list">
+        <li class="slider-controls-item">
+          <button class="slider-controls-button" type="button">Первый слайд</button>
+        </li>
+        <li class="slider-controls-item">
+          <button class="slider-controls-button" type="button">Второй слайд</button>
+        </li>
+        <li class="slider-controls-item">
+          <button class="slider-controls-button" type="button">Третий слайд</button>
+        </li>
+      </ul>
       <ul class="slider-list">
         <li class="slider-item">
           <div class="slider-item-image">
@@ -135,10 +151,16 @@
       <!-- Услуги -->
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-controls">
-          <li class="button services-controls-item">Доставка</li>
-          <li class="button services-controls-item">Гарантия</li>
-          <li class="button services-controls-item">Кредит</li>
+        <ul class="services-controls-list">
+          <li class="services-controls-item">
+            <button class="button services-controls-button" type="button">Доставка</button>
+          </li>
+          <li class="services-controls-item">
+            <button class="button services-controls-button" type="button">Гарантия</button>
+          </li>
+          <li class="services-controls-item">
+            <button class="button services-controls-button" type="button">Кредит</button>
+          </li>
         </ul>
         <ul class="services-list">
           <li class="services-item">
@@ -201,7 +223,7 @@
       <section class="contacts">
         <h2 class="main-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <img src="img/map.png" width="560" height="222" alt="Карта">
+        <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург">
 <br>
         <a class="button" href="#">Напишите нам</a>
       </section>
@@ -244,17 +266,30 @@
     <!-- Всплывающие окна -->
     <section class="modal-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <p>Ваше имя:</p>
-      <p>Ваш e-mail:</p>
-      <p>Текст письма:</p>
-      <a class="button">Отправить</a>
-      <span class="write-us-close">x</span>
+      <form class="write-us-form" action="index.html" method="post">
+        <p>
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" name="name" value="Имя Фамилия">
+        </p>
+        <p>
+          <label for="write-us-e-mail">Ваш e-mail:</label>
+          <input id="write-us-e-mail" type="text" name="e-mail" value="email@example.com">
+        </p>
+        <p>
+          <label for="write-us-message">Текст письма:</label>
+          <textarea id="write-us-message" name="message" rows="8" cols="80">В свободной форме</textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="close" type="button" name="button">Закрыть</button>
     </section>
 
     <section class="modal-map">
       <h2 class="visually-hidden">Расположение</h2>
-      <img src="img/map-big.png" width="960" height="559" alt="Большая карта">
-      <span class="map-close">x</span>
+      <p>
+        <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург">
+      </p>
+      <button class="close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
