@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Главная - Магазин электроники Device</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
     <!-- Шапка -->
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="">Device</a>
+        <span class="main-header-logo">Device</span>
         <form class="search-form" action="index.html" method="post">
           <p>
             <label class="visually-hidden" for="search">Поиск</label>
@@ -41,7 +43,7 @@
 
     <!-- Содержание страницы -->
     <main>
-      <h1 class="visually-hidden">Магазин электроники Device Главная страница</h1>
+      <h1 class="visually-hidden">Магазин электроники Device</h1>
 
       <!-- Популярные товары (слайдер) -->
       <section class="slider-container">
@@ -272,8 +274,8 @@
           <input id="write-us-name" type="text" name="name" value="Имя Фамилия">
         </p>
         <p>
-          <label for="write-us-e-mail">Ваш e-mail:</label>
-          <input id="write-us-e-mail" type="text" name="e-mail" value="email@example.com">
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input id="write-us-email" type="email" name="email" value="email@example.com">
         </p>
         <p>
           <label for="write-us-message">Текст письма:</label>
