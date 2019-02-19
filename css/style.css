@@ -22,13 +22,45 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+  letter-spacing: 0.01em;
   color: #464646;
 
   background-color: #ffffff;
 }
 
+.visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 a {
   text-decoration: none;
+}
+
+.button {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-header-logo {
@@ -77,7 +109,7 @@ a {
   border: none;
 }
 
-.header-user-list ul {
+.header-user-list {
   list-style: none;
 }
 
@@ -91,4 +123,213 @@ a {
 
 .header-user-list a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation-list {
+  list-style: none;
+}
+
+.main-navigation-item a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.main-navigation-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main-navigation-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.drop-down-catalog-list {
+  list-style: none;
+}
+
+.drop-down-catalog-list a {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-transform: none;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.main-title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.slider-table td {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.slider-table th {
+  font: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.catalog-subsections-list {
+  list-style: none;
+}
+
+.catalog-subsections-item a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-subsections-item a:hover {
+}
+
+.catalog-subsections-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.services-controls-list {
+  list-style: none;
+}
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.partners-item img {
+  filter: opacity(20%) grayscale(100%);
+}
+
+.partners-item img:hover {
+  filter: grayscale(0%) opacity(100%);
+}
+
+.transportation-companies-item a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+}
+
+.main-footer {
+  background-color: #464646;
+}
+
+.footer-logo {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+  color: #ffc600;
+  text-transform: uppercase;
+}
+
+.footer-logo a {
+  color: rgba(255, 198, 0, 1);
+}
+
+.footer-logo a:hover {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.footer-logo a:active {
+  color: rgba(255, 198, 0, 0.3);
+}
+
+.footer-user-list {
+  list-style: none;
+}
+
+.footer-user-list a {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-user-list a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-navigation p {
+  color: rgba(255, 255, 255, 1);
+}
+
+.footer-navigation-list {
+  list-style: none;
+}
+
+.footer-navigation-list a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+}
+
+.footer-navigation-list a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-navigation-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social-list a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.social-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.development {
+  color: rgba(255, 198, 0, 1);
+}
+
+.development:hover {
+  color: rgba(255, 198, 0, 0.6);
+}
+
+.development:active {
+  color: rgba(255, 198, 0, 0.3);
 }
