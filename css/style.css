@@ -63,6 +63,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* Шапка */
+
 .main-header-logo {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 48px;
@@ -161,14 +163,24 @@ a {
   text-transform: none;
 }
 
+/* Слайдер */
+
 .slider-list {
   list-style: none;
+}
+
+.slider-title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+  color: #000000;
 }
 
 .main-title {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 47px;
-  line-height: 56px;
+  line-height: 48px;
   font-weight: 800;
   color: #000000;
 }
@@ -187,6 +199,8 @@ a {
   line-height: 20px;
   text-transform: none;
 }
+
+/* Категории товаров */
 
 .catalog-subsections-list {
   list-style: none;
@@ -207,6 +221,8 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
+/* Услуги */
+
 .services-controls-list {
   list-style: none;
 }
@@ -218,6 +234,8 @@ a {
 .services-list {
   list-style: none;
 }
+
+/* Партнеры */
 
 .partners-list {
   list-style: none;
@@ -231,6 +249,12 @@ a {
   filter: grayscale(0%) opacity(100%);
 }
 
+/* О нас */
+
+.transportation-companies-list {
+  list-style: none;
+}
+
 .transportation-companies-item a {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 16px;
@@ -238,6 +262,219 @@ a {
   font-weight: 800;
   color: rgba(0, 0, 0, 1);
 }
+
+/* Пагинация */
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-list a {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs-list a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+/* Фильтр */
+
+.catalog-filte {
+  background-color: #eeeeee;
+}
+
+.filte-title-container {
+  background-color: #dcdcdc;
+}
+
+.section-title {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.catalog-filte-form fieldset {
+  border: none;
+}
+
+.catalog-filte-form legend {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-filte-range span,
+.catalog-filte-range output {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.catalog-filte-checkbox ul {
+  list-style: none;
+}
+
+.catalog-filte-checkbox label {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-filte-radio ul {
+  list-style: none;
+}
+
+.catalog-filte-radio label {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Сортировка */
+
+.sorting {
+  background-color: #ebebeb;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list {
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.sorting-list a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-list a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+/* Каталог */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item-name a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item-price {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+  color: #464646;
+  text-align: right;
+}
+
+.catalog-item-compare {
+  font: inherit;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog-item-compare:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.catalog-item-compare:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/* Пагинация */
+
+.pagination-list {
+  list-style: none;
+  background-color: #ebebeb;
+}
+
+.pagination-item a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.pagination-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.pagination-item a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.pagination-item-current a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.pagination-button a {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+}
+
+.pagination-button a:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-button a:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #d9d9d9;
+}
+
+
+
+/* Подвал */
 
 .main-footer {
   background-color: #464646;
@@ -269,11 +506,11 @@ a {
 }
 
 .footer-user-list a {
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-user-list a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 1);
 }
 
 .footer-user-list a:active {
@@ -286,6 +523,7 @@ a {
 
 .footer-navigation-list {
   list-style: none;
+  text-align: center;
 }
 
 .footer-navigation-list a {
@@ -308,6 +546,7 @@ a {
 
 .social-list {
   list-style: none;
+  text-align: center;
 }
 
 .social-list a {
@@ -322,14 +561,81 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-text-right {
+  text-align: right;
+}
+
 .development {
+  text-align: right;
+}
+
+.development a {
   color: rgba(255, 198, 0, 1);
 }
 
-.development:hover {
+.development a:hover {
   color: rgba(255, 198, 0, 0.6);
 }
 
-.development:active {
+.development a:active {
   color: rgba(255, 198, 0, 0.3);
+}
+
+/* Всплывающие окна */
+
+.modal-write-us,
+.modal-map {
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px 0 rgba(4, 6, 6, 0.2);
+}
+
+.modal-write-us label {
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);
+}
+
+.modal-write-us input,
+.modal-write-us textarea {
+  font: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(70, 70, 70, 0.4);
+  border: none;
+  background-color: rgba(242, 242, 242, 0.5);
+}
+
+/* Очевидно лучше на js делать, пока пропускаем */
+/*
+.modal-write-us input:invalid:focus,
+.modal-write-us textarea:invalid:focus {
+  color: rgba(70, 70, 70, 0.4);
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(237, 181, 181, 0.5);
+}
+*/
+
+.modal-write-us input:required,
+.modal-write-us textarea:required {
+  box-shadow: none;
+}
+
+.modal-write-us input:hover,
+.modal-write-us textarea:hover {
+  color: rgba(70, 70, 70, 0.4);
+  border: none;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-write-us input:focus,
+.modal-write-us textarea:focus {
+  color: rgba(70, 70, 70, 1);
+  border: none;
+  background-color: #ffffff;
+  outline: 3px solid rgba(240, 197, 46, 0.5);
+  outline-offset: -3px;
 }

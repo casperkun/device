@@ -12,7 +12,7 @@
     <header class="main-header">
       <span class="main-header-logo">Device</span>
       <nav class="main-navigation">
-        <form class="search-form" action="index.html" method="post">
+        <form class="search-form" action="index.html" method="get">
           <p>
             <label class="visually-hidden" for="search">Поиск</label>
             <input id="search" type="search" name="search" placeholder="Поиск по сайту">
@@ -26,12 +26,12 @@
         <ul class="main-navigation-list">
           <li class="main-navigation-item"><a href="catalog.html">Каталог товаров</a>
             <ul class="drop-down-catalog-list">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадракоптеры</a></li>
+              <li><a href="catalog.html">Виртуальная реальность</a></li>
+              <li><a href="catalog.html">Моноподы для селфи</a></li>
+              <li><a href="catalog.html">Экшн-камеры</a></li>
+              <li><a href="catalog.html">Фитнес-браслеты</a></li>
+              <li><a href="catalog.html">Умные часы</a></li>
+              <li><a href="catalog.html">Квадракоптеры</a></li>
             </ul>
           </li>
           <li class="main-navigation-item"><a href="#">Доставка</a></li>
@@ -65,7 +65,7 @@
             <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
           </div>
           <div class="slider-item-text">
-            <p class="main-title"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
+            <p class="slider-title"><b>Делай селфи,<br>как Бен Стиллер!</b></p>
             <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a class="button" href="#">Подробнее</a>
             <table class="slider-table">
@@ -260,7 +260,7 @@
           <li class="social-item"><a href="#">Instagram</a></li>
           <li class="social-item"><a href="#">Twitter</a></li>
         </ul>
-        <a class="development" href="#">HTML Academy</a>
+        <p class="development"><a href="#">HTML Academy</a></p>
       </div>
     </footer>
 
@@ -271,20 +271,22 @@
       <form class="write-us-form" action="index.html" method="post">
         <p>
           <label for="write-us-name">Ваше имя:</label>
-          <input id="write-us-name" type="text" name="name" value="Имя Фамилия">
+          <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p>
           <label for="write-us-email">Ваш e-mail:</label>
-          <input id="write-us-email" type="email" name="email" value="email@example.com">
+          <input id="write-us-email" type="email" name="email" placeholder="email@example.com" required>
         </p>
         <p>
           <label for="write-us-message">Текст письма:</label>
-          <textarea id="write-us-message" name="message" rows="8" cols="80">В свободной форме</textarea>
+          <textarea id="write-us-message" name="message" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
       <button class="close" type="button" name="button">Закрыть</button>
     </section>
+
+<br>
 
     <section class="modal-map">
       <h2 class="visually-hidden">Расположение</h2>
@@ -293,5 +295,8 @@
       </p>
       <button class="close" type="button">Закрыть</button>
     </section>
+
+<br>
+
   </body>
 </html>
