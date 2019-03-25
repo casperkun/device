@@ -2,10 +2,10 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Главная - Магазин электроники Device</title>
+    <title>Магазин электроники Device</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -22,27 +22,29 @@
           <ul class="header-user-list">
             <li class="header-user-item">
               <a class="user-login-out">Войти</a>
-              <span><a class="user-login-name" href="#">Щеночек Тобик</a><a class="user-login-in">Выйти</a></span>
+              <span><a class="user-login-name" href="#">CasperKun</a><a class="user-login-in" href="#">Выйти</a></span>
             </li>
             <li class="header-user-item"><a href="#">Сравнить</a></li>
             <li class="header-user-item"><a href="#">Корзина</a></li>
           </ul>
         </div>
         <ul class="main-navigation-list">
-          <li class="main-navigation-item"><a class="main-navigation-catalog-link"href="catalog.html">Каталог товаров</a>
+          <li class="main-navigation-item"><a class="main-navigation-catalog-link" href="catalog.html">Каталог товаров</a>
             <ul class="drop-down-catalog-list">
-              <ul class="drop-dow-columns">
-                <li><a href="catalog.html">Виртуальная реальность</a></li>
-                <li><a href="catalog.html">Моноподы для селфи</a></li>
-                <li><a href="catalog.html">Экшн-камеры</a></li>
-              </ul>
-              <ul class="drop-dow-columns">
-                <li><a href="catalog.html">Фитнес-браслеты</a></li>
-                <li><a href="catalog.html">Умные часы</a></li>
-              </ul>
-              <ul class="drop-dow-columns">
-                <li><a href="catalog.html">Квадракоптеры</a></li>
-              </ul>
+              <li>
+                <ul class="drop-dow-columns">
+                  <li><a href="catalog.html">Виртуальная реальность</a></li>
+                  <li><a href="catalog.html">Моноподы для селфи</a></li>
+                  <li><a href="catalog.html">Экшн-камеры</a></li>
+                </ul>
+                <ul class="drop-dow-columns">
+                  <li><a href="catalog.html">Фитнес-браслеты</a></li>
+                  <li><a href="catalog.html">Умные часы</a></li>
+                </ul>
+                <ul class="drop-dow-columns">
+                  <li><a href="catalog.html">Квадракоптеры</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="main-navigation-item"><a href="#">Доставка</a></li>
@@ -61,7 +63,7 @@
       <h2 class="visually-hidden">Популярные товары</h2>
       <ul class="slider-controls-list">
         <li class="slider-controls-item">
-          <button class="slider-controls-button" type="button">Первый слайд</button>
+          <button class="slider-controls-button slider-controls-button-active" type="button">Первый слайд</button>
         </li>
         <li class="slider-controls-item">
           <button class="slider-controls-button" type="button">Второй слайд</button>
@@ -71,7 +73,7 @@
         </li>
       </ul>
       <ul class="slider-list">
-        <li class="slider-item">
+        <li class="slider-item slider-item-active">
           <div class="slider-item-image">
             <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
           </div>
@@ -141,7 +143,7 @@
           <li class="catalog-subsections-item">
             <a href="catalog.html">
               <div class="catalog-subsections-container">
-                <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97px" height="55px">
+                <img src="img/popular-1.svg" alt="Виртуальная реальность" width="97" height="55">
               </div>
               <p>Виртуальная реальность</p>
             </a>
@@ -149,7 +151,7 @@
           <li class="catalog-subsections-item">
             <a href="catalog.html">
               <div class="catalog-subsections-container">
-                <img src="img/popular-2.svg" alt="Моноподы для селфи" width="86px" height="117px">
+                <img src="img/popular-2.svg" alt="Моноподы для селфи" width="86" height="117">
               </div>
               <p>Моноподы <br>для селфи</p>
             </a>
@@ -157,7 +159,7 @@
           <li class="catalog-subsections-item">
             <a href="catalog.html">
               <div class="catalog-subsections-container">
-                <img src="img/popular-3.svg" alt="Экшн-камеры" width="71px" height="87px">
+                <img src="img/popular-3.svg" alt="Экшн-камеры" width="71" height="87">
               </div>
               <p>Экшн-камеры</p>
             </a>
@@ -165,7 +167,7 @@
           <li class="catalog-subsections-item">
             <a href="catalog.html">
               <div class="catalog-subsections-container">
-                <img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107px" height="64px">
+                <img src="img/popular-4.svg" alt="Фитнес-браслеты" width="107" height="64">
               </div>
               <p>Фитнес-браслеты</p>
             </a>
@@ -173,7 +175,7 @@
           <li class="catalog-subsections-item">
             <a href="catalog.html">
               <div class="catalog-subsections-container">
-                <img src="img/popular-5.svg" alt="Умные часы" width="56px" height="98px">
+                <img src="img/popular-5.svg" alt="Умные часы" width="56" height="98">
               </div>
               <p>Умные часы</p>
             </a>
@@ -181,7 +183,7 @@
           <li class="catalog-subsections-item">
             <a href="catalog.html">
               <div class="catalog-subsections-container">
-                <img src="img/popular-6.svg" alt="Квадракоптеры" width="132px" height="69px">
+                <img src="img/popular-6.svg" alt="Квадракоптеры" width="132" height="69">
               </div>
               <p>Квадракоптеры</p>
             </a>
@@ -266,8 +268,10 @@
         <section class="contacts">
           <h2 class="main-title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург">
-          <button class="button about-us-button" type="button">Напишите нам</button>
+          <a class="map-button">
+            <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург">
+          </a>
+          <button class="button form-button" type="button">Напишите нам</button>
         </section>
       </div>
     </main>
@@ -279,7 +283,7 @@
         <ul class="footer-user-list">
           <li class="footer-user-item">
             <a class="user-login-out">Войти</a>
-            <span><a class="user-login-name" href="#">Щеночек Тобик</a><a class="user-login-in">Выйти</a></span>
+            <span><a class="user-login-name" href="#">CasperKun</a><a class="user-login-in" href="#">Выйти</a></span>
           </li>
           <li class="footer-user-item"><a href="#">Сравнить</a></li>
           <li class="footer-user-item"><a href="#">Корзина</a></li>
@@ -298,42 +302,55 @@
 
       <div class="bottom-footer-row">
         <ul class="social-list">
-          <li class="social-item"><a href="#"><span class="visually-hidden">Facebook</span></a></li>
-          <li class="social-item"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
-          <li class="social-item"><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li class="social-item">
+            <a href="https://www.facebook.com"><span class="visually-hidden">Facebook</span></a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com"><span class="visually-hidden">Instagram</span></a>
+          </li>
+          <li class="social-item">
+            <a href="https://twitter.com/"><span class="visually-hidden">Twitter</span></a>
+          </li>
         </ul>
-        <p class="development"><a href="#"><span class="visually-hidden">HTML Academy</span></a></p>
+        <p class="development">
+          <a href="https://github.com/casperkun"><span class="visually-hidden">HTML Academy</span></a>
+        </p>
       </div>
     </footer>
 
     <!-- Всплывающие окна -->
-    <section class="modal-write-us">
+    <section class="modal modal-write-us">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="write-us-form" action="index.html" method="post">
-        <p>
-          <label for="write-us-name">Ваше имя:</label>
-          <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
-        </p>
-        <p>
-          <label for="write-us-email">Ваш e-mail:</label>
-          <input id="write-us-email" type="email" name="email" placeholder="email@example.com" required>
-        </p>
-        <p>
+        <div class="name-and-email-container">
+          <p>
+            <label for="write-us-name">Ваше имя:</label>
+            <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия" required>
+          </p>
+          <p>
+            <label for="write-us-email">Ваш e-mail:</label>
+            <input id="write-us-email" type="email" name="email" placeholder="email@example.com" required>
+          </p>
+        </div>
+        <p class="message-container">
           <label for="write-us-message">Текст письма:</label>
           <textarea id="write-us-message" name="message" placeholder="В свободной форме" rows="8" cols="80" required></textarea>
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="button modal-button" type="submit">Отправить</button>
       </form>
-      <button class="close" type="button" name="button">Закрыть</button>
+      <button class="modal-close modal-close-write-us" type="button" name="button">Закрыть</button>
     </section>
 
-    <section class="modal-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Расположение</h2>
       <p>
         <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург">
       </p>
-      <button class="close" type="button">Закрыть</button>
+      <button class="modal-close modal-close-map" type="button">Закрыть</button>
     </section>
 
+    <div class="modal-overlay"></div>
+
+  <script src="js/script.js"></script>
   </body>
 </html>
