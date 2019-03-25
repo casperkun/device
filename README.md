@@ -1,2 +1,2 @@
-# device.github.io
+# device
 учебный проект
