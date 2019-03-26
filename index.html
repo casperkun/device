@@ -5,7 +5,7 @@
     <title>Магазин электроники Device</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -21,7 +21,7 @@
           </form>
           <ul class="header-user-list">
             <li class="header-user-item">
-              <a class="user-login-out login-visible">Войти</a>
+              <a class="user-login-out login-visible" href="#">Войти</a>
               <span class="login-in-box"><a class="user-login-name" href="https://github.com/casperkun">CasperKun</a><a class="user-login-in" href="#">Выйти</a></span>
             </li>
             <li class="header-user-item"><a href="#">Сравнить</a></li>
@@ -268,7 +268,7 @@
         <section class="contacts">
           <h2 class="main-title">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a class="map-button">
+          <a class="map-button" href="#">
             <img src="img/map.png" width="560" height="222" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург">
           </a>
           <button class="button form-button" type="button">Напишите нам</button>
@@ -282,7 +282,7 @@
         <span class="footer-logo">Device</span>
         <ul class="footer-user-list">
           <li class="footer-user-item">
-            <a class="user-login-out login-visible">Войти</a>
+            <a class="user-login-out login-visible" href="#">Войти</a>
             <span class="login-in-box"><a class="user-login-name" href="https://github.com/casperkun">CasperKun</a><a class="user-login-in" href="#">Выйти</a></span>
           </li>
           <li class="footer-user-item"><a href="#">Сравнить</a></li>
@@ -344,13 +344,14 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Расположение</h2>
       <p>
-        <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCqPFN1p" width="960" height="559" frameborder="0" allowfullscreen=""></iframe>
+        <!-- <img src="img/map-big.png" width="960" height="559" alt="Офис компании по адресу ул. Строителей 15, Санкт-Петербург"> -->
       </p>
       <button class="modal-close modal-close-map" type="button">Закрыть</button>
     </section>
 
     <div class="modal-overlay"></div>
 
-  <script src="js/script.js"></script>
+  <script src="js/script-min.js"></script>
   </body>
 </html>

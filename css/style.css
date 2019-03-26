@@ -724,6 +724,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   width: 1160px;
   padding: 0;
@@ -733,6 +735,11 @@ a {
 .catalog-subsections-item {
   width: 160px;
   line-height: 24px;
+  margin-right: 40px;
+}
+
+.catalog-subsections-item:nth-child(6n) {
+  margin: 0;
 }
 
 .catalog-subsections-item .catalog-subsections-container {
@@ -939,6 +946,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .partners-item {
@@ -1084,7 +1093,8 @@ a {
   width: 560px;
 }
 
-.contacts img {
+.map-button {
+  display: inline-block;
   margin: 20px 0 63px 0;
 }
 
@@ -1580,7 +1590,7 @@ a {
   position: relative;
 }
 
-.catalog-item:nth-child(4) .catalog-item-img::after {
+.catalog-item-new .catalog-item-img::after {
   font-family: 'Gilroy', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 800;
@@ -2093,22 +2103,18 @@ a {
 }
 
 .development {
-  width: 80px;
-  text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
-.development a::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+.development a {
+  display: block;
+  position: relative;
   width: 27px;
   height: 35px;
   background-image: url("../img/logo-html.svg");
   background-repeat: no-repeat;
+  margin-left: 55px;
 }
 
 .development a:focus,
@@ -2333,6 +2339,10 @@ a {
 .modal-map p {
   margin: 0;
   padding: 0;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .modal-close {
